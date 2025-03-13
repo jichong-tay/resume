@@ -26,12 +26,26 @@
             margin-top: 10px;
             font-size: 16px;
         }
+        @media (min-width: 769px) {
+            iframe {
+                height: 95vh; /* Adjust height to fit the entire first page */
+                width: 60%; /* Adjust width to fit the entire first page */
+                margin: 0 auto; /* Center the iframe */
+                display: block;
+            }
+        }
+        @media (max-width: 768px) {
+            iframe {
+                height: 96vh;
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
     <iframe src="https://drive.google.com/file/d/1ZINuodHmLYAnn2GUkZt625Ct7CD86YTk/preview"></iframe>
     <p class="fallback">
-        If you cannot scroll, <a href="https://drive.google.com/file/d/1ZINuodHmLYAnn2GUkZt625Ct7CD86YTk/preview" target="_blank">click here</a> to open the resume in a new tab.
+        <a href="https://drive.google.com/file/d/1ZINuodHmLYAnn2GUkZt625Ct7CD86YTk/preview" target="_blank">Click here</a> to download the resume
     </p>
 </body>
 </html>
